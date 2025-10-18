@@ -9,37 +9,100 @@
     <link rel = "icon" href = "assets/Logo.png" type = "image/png">
     <link rel="stylesheet" href="styles.css">
     <title>Schoogle</title>
-    </head>
-<body>
+    <style>
+        #Content {
+            font-family: Arial, sans-serif;
+            padding-top: -30px;
+            color:#ffffff;
+            background-color: #111111;
+            text-align: center;
+            margin: -10px;
+            margin-bottom: 0%;
+            padding:-10px;
 
-    <header>
-        <img src="assets/schoogle_header.png" alt="Header" title="Website Logo" >
-        <br>
+        }
+        #TopBar {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: #4b0082;
+            text-align: right;
+            position: fixed;
+            width: 100%;
+            background-color: #131313;
+            margin-top: -100px;
+            margin: 0;
+            padding: 0;
+
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 15px;
+            transition:color 0.3s;
+        }
+        a:hover {
+            color: #4b0082;
+        }
+        .TopText_gradient {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            background: linear-gradient(to top, #dcdcdc, #b19cd9); /* light gray to purple */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: left;
+            padding-top: 40px;
+            padding-left: 100px;
+            width: 100%;
+        }
+        #TopLogo {
+            vertical-align: middle;
+            margin-right: 00px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        label {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header id="TopBar">
+        <h1 class="TopText_gradient">
+        <img id="TopLogo" src="assets/Logo2.png" alt="Logo2" title="Website Heading Logo" width="60" height="70">
+        SCHOOGLE
+        </h1>
         <nav>
-            <a href="https://hernandez-enzo.github.io/2QRepositoryMgHernandez/public/2Q1MagnesiumHernandez.html">Home</a><a> </a>
-            <a href="https://ethel1wastaken.github.io/CS3_2ndQtrPortfolio/public/2Q1GMgGamis.html">Tutor Profiles</a><a> </a>
-            <b>  Rating </b>
-            <a href="https://waxingcrescent8193.github.io/2QPortfolioMgESCOBAR/public/2Q1GMgEscobar.html">Application</a><a> </a>
+            <a href="https://hernandez-enzo.github.io/2QRepositoryMgHernandez/public/2Q1MagnesiumHernandez.html">Home</a>
+            <a href="https://ethel1wastaken.github.io/CS3_2ndQtrPortfolio/public/2Q1GMgGamis.html">Tutors</a>
+            <b>Rating</b>
+            <a href="https://waxingcrescent8193.github.io/2QPortfolioMgESCOBAR/public/2Q1GMgEscobar.html">Application</a>
         </nav>
+    </header>
+    <header id="Content">
+        <br>
+        
         <div>
             <br>
             <h1>Schoogle Ratings Page</h1>
             <img src="assets/RATING.webp" alt="Rating Image" title="Rating Image">
             <p>It is vital to our organization us that our services are of the utmost quality. In order to achieve this we need you to rate our services
-            and <br>the performance of our tutors. Your evaluate of our sevices is deeply appreciated and will be taken into account when <br>
+            and <br>the performance of our tutors. Your evaluation of our sevices is deeply appreciated and will be taken into account when <br>
             improving our services.</p>
-            <h2>Why We need Ratings and Reviews.</h2>
-            <table>
+            <h2>Why We Need Ratings and Reviews.</h2>
+            <table style="border:1px solid black; ;background:linear-gradient(rgb(184, 106, 184),rgb(163, 27, 140));">
                 <tr> <th colspan="4">Tutor Rating</th></tr>
-                <tr>
-                    <th>Star Rating</th>
+                <tr style="border: 1px solid black;">
                     <th>Tutor 1</th>
                     <th>Tutor 2</th>
                     <th>Tutor 3</th>
                     <th>Performance</th>
                 </tr>
-                <tr>
-                    <td rowspan = "5">Number of Star/s</td>
+                <tr style="border: 1px solid black;">
                     <td>1 star</td>
                     <td>1 star</td>
                     <td>1 star</td>
@@ -47,22 +110,22 @@
                     Sessions were disorganized, explanations were unclear, 
                     and there was little to no progress in learning.</td>
                 </tr>
-                <tr>
+                <tr style="border: 1px solid black;">
                     <td>2 stars</td>
                     <td>2 stars</td>
                     <td>2 stars</td>
                     <td>Fair: Some effort was made to teach the students, but the tutoring was ineffective. 
                     The tutor showed limited ability to engage or adapt to the student’s needs.</td>
                 </tr>
-                <tr>
+                <tr style="border: 1px solid black;">
                     <td>3 stars</td>
                     <td>3 stars</td>
                     <td>3 stars</td>
                     <td>Good: The tutor met basic expectations. 
-                    Sessions were adequate enough to eduacte the students 
+                    Sessions were adequate enough to educate the students 
                     but lacked depth or personalization. </td>
                 </tr>
-                <tr>
+                <tr style="border: 1px solid black;">
                     <td>4 stars</td>
                     <td>4 stars</td>
                     <td>4 stars</td>
@@ -70,7 +133,7 @@
                     The tutor demonstrated skillful understanding of the topic they are teaching. 
                     Teaching the student/s in a manner that was entertaining and engaging.</td>
                 </tr>
-                <tr>
+                <tr style="border: 1px solid black;">
                     <td>5 stars</td>
                     <td>5 stars</td>
                     <td>5 stars</td>
