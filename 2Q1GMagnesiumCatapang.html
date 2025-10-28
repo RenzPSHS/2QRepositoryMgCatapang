@@ -92,7 +92,35 @@
         }
         h2 {
             font-size: 36px;
-            background: linear-gradient(to top, #55d555, #38ec38);
+            background: linear-gradient(to top, #4bad4b, #23f323);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .submit {
+            background-color: #4b0082;
+            color: #ffffff;
+            font-size: 48px;
+            margin: 30px;
+            transition: background-color 0.3s;
+        }
+        .submit:hover {
+            background-color: #9450c6;
+        }
+        #rating, #tutor {
+            font-size: 36px;
+            margin: 10px;
+        }
+        label {
+            font-size: 36px;
+            background: linear-gradient(to top, #f2d024, #f2a024);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            align-items: left;
+
+        }
+        h3 {
+            font-size: 48px;
+            background: linear-gradient(to top, #ff7e5f, #feb47b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -122,7 +150,7 @@
             and the performance of our tutors. Your evaluation of our sevices is deeply appreciated and will be taken into account when 
             improving our services.</p>
             <h2>Why We Need Ratings and Reviews.</h2>
-            <table style="border:1px solid black; ;background:linear-gradient(rgb(187, 69, 187),rgb(179, 71, 157));">
+            <table style="border:1px solid black; ;background:linear-gradient(rgb(187, 69, 187,0.9),rgb(179, 71, 157,0.5));">
                 <tr> <th colspan="4">Tutor Rating</th></tr>
                 <tr style="border: 1px solid black;">
                     <th style="border-style: solid; border-width: 1px; border-color: black">Tutor 1</th>
@@ -184,7 +212,7 @@
                 <option value="tutor2">Tutor 2</option>
                 <option value="tutor3">Tutor 3</option>
             </select>
-            <br><br>
+            <br>
             <label for="rating">Rating from 1 star to 5 stars(Select Tutor First):</label>
             <select id="rating" name="rating" required>
                 <option value="">Select</option>
@@ -194,8 +222,8 @@
                 <option value="4">4 Stars</option>
                 <option value="5">5 Stars</option>
             </select>
-            <br><br>
-            <input type="submit" value="Submit Rating">
+            <br>
+            <button class="submit">Submit rating</button>
         </div>
   </header>
   <footer>
