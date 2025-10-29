@@ -6,56 +6,14 @@
     <meta name="description" content="">
     <meta name="keywords" content="2Q, Portfolio, Projects, web Development">
     <meta name="author" content="RenzPSHS">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
     <link rel = "icon" href = "assets/Logo.png" type = "image/png">
     <link rel="stylesheet" href="styles.css">
     <title>Schoogle</title>
     <style>
-        #Content {
-            font-family: Arial, sans-serif;
-            padding-top: -30px;
-            color:#ffffff;
-            background-color: #131313;
+        .Content {
             text-align: center;
-            margin: -10px;
-            margin-bottom: 0;
-
-        }
-        #TopBar {
-            font-family: 'Roboto', sans-serif;
-            font-size: 20px;
-            color: #4b0082;
-            text-align: right;
-            position: fixed;
-            width: 80%;
-            background-color: #131313;
-            margin-top: -100px;
-            margin: 0 auto;
-            padding: 0;
-
-        }
-        a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 15px;
-            transition:color 0.3s;
-        }
-        a:hover {
-            color: #4b0082;
-        }
-        .TopText_gradient {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 40px;
-            background: linear-gradient(to top, #dcdcdc, #b19cd9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: left;
-            padding-left: 100px;
-
-        }
-        #TopLogo {
-            vertical-align: middle;
-            margin-top:-30px;
         }
         p {
             font-size: 24px;;
@@ -79,11 +37,6 @@
             padding-top: 0px;
             padding-left: 0px;
             width: 100%;
-        }
-        nav {
-            margin-right: 0px;
-            font-size: 30px;
-            text-align: left;
         }
         table {
             width: 80%;
@@ -124,32 +77,177 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color:white
+}
+/*
+.footer__container,
+.social__media {
+    background-color: #141414;
+}
+*/
+
+/**/.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+.navbar {
+    background-color: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+.TopText_gradient {
+    background-color: #3c3971;
+    background-image: linear-gradient(to top, #000000 10%, #ffffff 55%, #3c3971 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+
+.navbar__item {
+    height: 80px;
+}
+
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #3c3971;
+    color: #fff;
+}
+
+
+.button:hover {
+    background: #713939;
+    transition: all 0.3s ease;
+}
+
+
+.navbar__links:hover {
+    color: #3c3971;
+    transition: all 0.3s ease;
+}
+
+
+#mobile-menu {
+    display: none;
+}
+
     </style>
 </head>
 <body>
-    <header id="TopBar">
+    <header class="navbar">
+        <div class="navbar__container">
         <h1 class="TopText_gradient">
         <img id="TopLogo" src="assets/Logo2.png" alt="Logo2" title="Website Heading Logo" width="60" height="70">
         SCHOOGLE
         </h1>
-        <nav>
-            <a href="https://hernandez-enzo.github.io/2QRepositoryMgHernandez/public/2Q1MagnesiumHernandez.html">Home</a>
-            <a href="https://ethel1wastaken.github.io/CS3_2ndQtrPortfolio/public/2Q1GMgGamis.html">Tutors</a>
-            <b>Rating</b>
-            <a href="https://waxingcrescent8193.github.io/2QPortfolioMgESCOBAR/public/2Q1GMgEscobar.html">Application</a>
-        </nav>
+            <nav class="navbar__menu">
+                <li class="navbar__item"><a href="https://hernandez-enzo.github.io/2QRepositoryMgHernandez/public/2Q1MagnesiumHernandez.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="https://ethel1wastaken.github.io/CS3_2ndQtrPortfolio/public/2Q1GMgGamis.html" class="navbar__links">Tutors</a></li>
+                <li class="navbar__item"><a href="https://renzpshs.github.io/2QRepositoryMgCatapang/2Q1GMagnesiumCatapang.html" class="navbar__links">Rating</a></li>
+                <li class="navbar__btn"><a href="https://waxingcrescent8193.github.io/2QPortfolioMgESCOBAR/public/2Q1GMgEscobar.html" class="button">Application</a></li>
+            </nav>
+        </div>
     </header>
-    <header id="Content">
-        <br><br><br><br><br><br>
+<section>
+    <header class="Content">
         <div>
             <h1 class="Title">Schoogle Ratings Page</h1>
             <hr style="border: none; height: 2px; background-color: #ffffff;">
-
+        </div>
+        <div>
             <img src="assets/RATING.webp" alt="Rating Image" title="Rating Image">
             <p>It is vital to our organization us that our services are of the utmost quality. In order to achieve this we need you to rate our services 
             and the performance of our tutors. Your evaluation of our sevices is deeply appreciated and will be taken into account when 
             improving our services.</p>
             <h2>Why We Need Ratings and Reviews.</h2>
+        </div>
+        <div>
             <table style="border:1px solid black; ;background:linear-gradient(rgb(187, 69, 187,0.9),rgb(179, 71, 157,0.5));">
                 <tr> <th colspan="4">Tutor Rating</th></tr>
                 <tr style="border: 1px solid black;">
@@ -186,7 +284,7 @@
                     <td style="border-style: solid; border-width: 1px; border-color: black">4 stars</td>
                     <td style="border-style: solid; border-width: 1px; border-color: black">4 stars</td>
                     <td style="border-style: solid; border-width: 1px; border-color: black">Very Good: The performance of the tutor was very effective. 
-                    The tutor demonstrated skillful understanding of the topic they are teaching. <br>
+                    The tutor demonstrated skillful understanding of the topic they are teaching. 
                     Teaching the student/s in a manner that was entertaining and engaging.</td>
                 </tr>
                 <tr style="border: 1px solid black;">
@@ -194,10 +292,13 @@
                     <td style="border-style: solid; border-width: 1px; border-color: black">5 stars</td>
                     <td style="border-style: solid; border-width: 1px; border-color: black">5 stars</td>
                     <td style="border-style: solid; border-width: 1px; border-color: black">Excellent: The tutor exceeded expectations. 
-                    The tutor demonstrated high knowledge and understanding of the topic. <br>
+                    The tutor demonstrated high knowledge and understanding of the topic. 
                     They managed to captivate and grab the attention of the student/s and teach all of the lessons of the topic. 
-                    <br>The Tutor was also able to give the students deep understanding of the topic.</td>
+                    The Tutor was also able to give the students deep understanding of the topic.</td>
                 </tr>
+            </table>
+        </div>
+        <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/EozChLrFtf4?si=iK7NYmR6Lj_Ao9re" title="YouTube Rating Video" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -226,6 +327,7 @@
             <button class="submit">Submit rating</button>
         </div>
   </header>
+</section>
   <footer>
     &copy; RenzPSHS, 1st Graded Exercise
   </footer>
